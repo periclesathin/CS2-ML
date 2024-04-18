@@ -13,8 +13,8 @@ c. Dodaj jedną lub więcej warstw ukrytych, określając liczbę neuronów i fu
 d. Zdefiniuj warstwę wyjściową, określając liczbę neuronów równą liczbie klas (dla problemów klasyfikacji) lub 1 (dla problemów regresji) oraz odpowiednią funkcję aktywacji.
 
 Skompiluj model:
-a. Zdefiniuj optimizer, funkcję straty i metryki do oceny modelu.
-b. Skompiluj model, przekazując optimizer, funkcję straty i metryki.
+//a. Zdefiniuj optimizer, funkcję straty i metryki do oceny modelu.
+//b. Skompiluj model, przekazując optimizer, funkcję straty i metryki.
 
 Trenuj model:
 a. Wywołaj metodę fit na skompilowanym modelu, przekazując zbiór treningowy (X_train, y_train) oraz opcjonalnie zbiór walidacyjny.
