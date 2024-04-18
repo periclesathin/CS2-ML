@@ -2,12 +2,12 @@
 
 
 Przygotowanie danych:
-a. Podziel zbiór danych na zbiór treningowy i testowy za pomocą train_test_split ze sklearn.
-b. Zidentyfikuj zmienne objaśniające (X) i zmienną objaśnianą (y) w zbiorze danych.
-c. Zastosuj standaryzację lub normalizację do zmiennych objaśniających za pomocą StandardScaler ze sklearn.
+//a. Podziel zbiór danych na zbiór treningowy i testowy za pomocą train_test_split ze sklearn.
+//b. Zidentyfikuj zmienne objaśniające (X) i zmienną objaśnianą (y) w zbiorze danych.
+//c. Zastosuj standaryzację lub normalizację do zmiennych objaśniających za pomocą StandardScaler ze sklearn.
 
 Zdefiniuj architekturę sieci neuronowej:
-a. Zaimportuj moduły TensorFlow, takie jak keras lub tf.keras.
+//a. Zaimportuj moduły TensorFlow, takie jak keras lub tf.keras.
 b. Zdefiniuj warstwę wejściową sieci, określając liczbę neuronów równą liczbie zmiennych objaśniających.
 c. Dodaj jedną lub więcej warstw ukrytych, określając liczbę neuronów i funkcję aktywacji dla każdej warstwy.
 d. Zdefiniuj warstwę wyjściową, określając liczbę neuronów równą liczbie klas (dla problemów klasyfikacji) lub 1 (dla problemów regresji) oraz odpowiednią funkcję aktywacji.
