@@ -5,14 +5,17 @@ import pandas as pd
 data = pd.read_csv('data - FractureCase.csv')
 
 # Przygotowanie danych
-X = data[['Data', 'Players', 'Events', 'Volume']]
+X = data[['Data', 'Players', 'Events']]
 y = data['Price']
 
 # Konwersja daty na format liczbowy
-X['Data'] = pd.to_datetime(X['Data']).view('int64') // 10**9
+X['Data'] = (pd.to_datetime(X['Data']).astype('int64') // 10**9).astype('int64')
 
 # Konwersja kolumny 'Events' na wartości 0/1
-X['Events'] = X['Events'].apply(lambda x: 1 if x else 0)
+X.loc[:, 'Events'] = X['Events'].apply(lambda x: 1 if x else 0)
+
+# Instalacja sklearn (jeśli nie jest zainstalowany)
+# !pip install scikit-learn
 
 # Podzielenie danych na zbiór treningowy i testowy
 from sklearn.model_selection import train_test_split
