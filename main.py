@@ -2,7 +2,7 @@ import tensorflow as tf
 import pandas as pd
 
 # Wczytywanie danych
-data = pd.read_csv('data.xlsx')
+data = pd.read_csv('data - FractureCase.csv')
 
 # Przygotowanie danych
 X = data[['Data', 'Players', 'Events', 'Volume']]
