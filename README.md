@@ -1,24 +1,21 @@
+# Predicting Item Prices in CS2
+## Key Features:
+📊 Data Loading & Preprocessing:
+The dataset is read from a .csv file, relevant features are selected, and data is split into training and testing sets.
+🔄 Data Standardization:
+Both features (X) and target values (y) are standardized to improve model training performance.
+🧠 Neural Network Model:
+A simple feedforward neural network is defined using Keras with dropout layers to prevent overfitting.
+🏋️‍♂️ Model Training:
+The model is trained over 100 epochs with mean squared error as the loss function and mean absolute error (MAE) as a metric.
+📈 Learning Curves Visualization:
+Plots are generated to track training vs validation loss and MAE over epochs.
+🤖 Prediction on New Data:
+The model makes predictions for the most recent row in the dataset (simulating a real-time forecast). The prediction is rescaled back to the original price format.
 
-# Wizualizacja krzywych uczenia się
-plt.figure(figsize=(12, 6))
-
-# Krzywa straty
-plt.subplot(1, 2, 1)
-plt.plot(history.history['loss'], label='Strata treningowa')
-plt.plot(history.history['val_loss'], label='Strata walidacyjna')
-plt.title('Krzywa straty')
-plt.xlabel('Epoka')
-plt.ylabel('Strata')
-plt.legend()
-
-# Krzywa metryki mean_absolute_error
-plt.subplot(1, 2, 2)
-plt.plot(history.history['mean_absolute_error'], label='MAE treningowe')
-plt.plot(history.history['val_mean_absolute_error'], label='MAE walidacyjne')
-plt.title('Krzywa mean_absolute_error')
-plt.xlabel('Epoka')
-plt.ylabel('MAE')
-plt.legend()
-
-plt.tight_layout()
-plt.show()
+## Tools & Technologies
+Python 
+TensorFlow / Keras 
+Scikit-learn 
+Pandas / NumPy 
+Matplotlib 
